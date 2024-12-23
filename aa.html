@@ -1,0 +1,258 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+   
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css" rel="stylesheet">
+    <title>Document</title>
+</head>
+<body style="padding-left: 00px;
+padding-right: 00px;
+padding-top: 00px;">
+    <header>
+        <div class="logo">Berimbolo</div>
+        
+        <nav>
+            <ul class="nav-links">
+                <li><a href="aa.html" id="homeLink">Home</a></li>
+                <li><a href="product.html" id="productLink">Product</a></li>
+                <li class="dropdown">
+                    <a href="#" class="dropdown-toggle" id="languageDropdown" data-toggle="dropdown">Language</a>
+                    <ul class="dropdown-menu">
+                        <li><a href="#" onclick="changeLanguage('en')">English</a></li>
+                        <li><a href="#" onclick="changeLanguage('ar')">Arabic</a></li>
+                    </ul>
+                </li>
+                <li><a href="contac us.html" id="contactLink">Contact Us</a></li>
+            </ul>
+        </nav>
+        <div class="icons">
+            <div class="icon">
+                <img src="tt.webp" alt="User Icon">
+            </div>
+            <div class="icon" onclick="toggleCartPopup()">
+                <img src="rr.webp" alt="Cart Icon">
+            </div>
+        </div>
+        <div class="cart-popup" id="cartPopup">
+            <ul>
+                <li>Product 1 - $30</li>
+                <li>Product 2 - $45</li>
+                <li>Product 3 - $20</li>
+            </ul>
+            <button class="close-btn" onclick="toggleCartPopup()">Close</button>
+        </div>
+    </header>
+    <main>
+        <section class="hero">
+            <div class="text-content">
+                <h1>Advanced Cybersecurity Technology<br>for a Safer Digital Future</h1>
+            <p>Integrated cybersecurity to safeguard your data and ensure the continuity of your business securely. 
+                Our advanced solutions proactively detect and mitigate threats, protecting sensitive data and minimizing risks, 
+                ensuring your business stays secure against evolving cyber threats.".</p>
+            <button class="read-more btn btn-primary">Uncover Details</button>
+            </div>
+        </section>
+        
+        <div class="image-table">
+            <table>
+                <tr>
+                    <td><img src="image1.webp" alt="Smart Home"></td>
+                    <td><img src="image2.jpg" alt="Security Camera"></td>
+                </tr>
+                <tr>
+                    <td><img src="image3.jpg" alt="Teamwork"></td>
+                    <td><img src="image4.jpg" alt="IoT Technology"></td>
+                </tr>
+            
+            </table>
+            <hr class="hhr pt-5">
+            
+        </div>
+        
+    </main>
+    <h1>Explore our wide range of cyber security products 
+        tailored to provide maximum protection:</h1>
+    <div class="product-container">
+        <!-- Product Card 1 -->
+        <div class="product-card">
+            <img src="camera1.jpg" alt="Tuya Smart PIR Motion Sensor">
+            <h2>Tuya Smart PIR Motion Sensor</h2>
+            <p>Wireless motion sensor with Wi-Fi, compatible with Tuya and
+                 Smart Life apps for mobile control.</p>
+            <div class="product-info">
+                <button class="buy-btn ">Buy Now</button>
+                <span class="price">$66.11</span>
+            </div>
+        </div>
+        <div class="product-card">
+            <img src="camera2.jpeg" alt="Arlo Essential Wireless Video Doorbell">
+            <h2>Arlo Essential Wireless Video Doorbell</h2>
+            <p>Wireless video doorbell with 1536p resolution, motion detection, 
+                color night vision, and two-way audio. Easy to install and controlled via the Arlo app.</p>
+            <div class="product-info">
+                <button class="buy-btn">Buy Now</button>
+                <span class="price">$112.33</span>
+            </div>
+        </div>
+        <div class="product-card">
+            <img src="door1.webp" alt="Arlo Essential Wireless Video Doorbell">
+            <h2>Arlo Essential Wireless Video Doorbell</h2>
+            <p>A smart motion sensor that detects movement and triggers automation. Works with Matter for seamless integration with smart home systems.</p>
+            <div class="product-info">
+                <button class="buy-btn">Buy Now</button>
+                <span class="price">$49.33</span>
+            </div>
+        </div> 
+        <div class="product-card">
+            <img src="dooor2.jpg" alt="Arlo Essential Wireless Video Doorbell">
+            <h2>Arlo Essential Wireless Video Doorbell</h2>
+            <p>A smart motion sensor that detects movement and triggers automation. Works with Matter for seamless integration with smart home systems.</p>
+            <div class="product-info">
+                <button class="buy-btn">Buy Now</button>
+                <span class="price">$75.23</span>
+            </div>
+        </div>
+        <div class="product-card">
+            <img src="ggg.jpg" alt="Arlo Essential Wireless Video Doorbell">
+            <h2>Arlo Essential Wireless Video Doorbell</h2>
+            <p>A smart motion sensor that detects movement and triggers automation. Works with Matter for seamless integration with smart home systems.</p>
+            <div class="product-info">
+                <button class="buy-btn">Buy Now</button>
+                <span class="price">$210.1</span>
+            </div>
+        </div>
+        <div class="product-card">
+            <img src="eee.jpg" alt="Arlo Essential Wireless Video Doorbell">
+            <h2>Tuya Smart PIR Motion Sensor</h2>
+            <p>Wireless motion sensor with Wi-F i, 
+                compatible with Tuya and Smart Life apps for mobile control.</p>
+            <div class="product-info">
+                <button class="buy-btn">Buy Now</button>
+                <span class="price">$87.12</span>
+            </div>
+        </div>
+    </div>
+    <div class="container mt-5">
+        <h2 class="text-center mb-5 text-primary fw-bold">Feedback</h2>
+    
+        <div id="customerCarousel" class="carousel slide" data-bs-ride="carousel">
+          <div class="carousel-inner">
+            <!-- رأي 1 -->
+            <div class="carousel-item active">
+              <div class="d-flex justify-content-center">
+                <div class="text-center">
+                  <img src="./images3.jpeg" class="rounded-circle mb-3" alt="صورة العميل">
+                  <h5>nada nasr</h5>
+                  <p>The service was great and I am completely satisfied with the experience.
+                     I'll be back again for sure!</p>
+                  <small class="text-muted">تقييم: ⭐⭐⭐⭐☆</small>
+                </div>
+              </div>
+            </div>
+    
+            <!-- رأي 2 -->
+            <div class="carousel-item">
+              <div class="d-flex justify-content-center">
+                <div class="text-center">
+                  <img src="./im2.jpg" class="rounded-circle mb-3" alt="صورة العميل">
+                  <h5>ali ayman/</h5>
+                  <p>Great and special experience. 
+                    I am very happy with the quality and support.</p>
+                  <small class="text-muted">تقييم: ⭐⭐⭐⭐⭐</small>
+                </div>
+              </div>
+            </div>
+    
+            <!-- رأي 3 -->
+            <div class="carousel-item">
+              <div class="d-flex justify-content-center">
+                <div class="text-center">
+                  <img src="./image1.jpeg" class="rounded-circle mb-3" alt="صورة العميل">
+                  <h5>ali mostafa</h5>
+                  <p>Excellent product! High quality and great performance. 
+                    I recommend it to everyone.</p>
+                  <small class="text-muted">تقييم: ⭐⭐⭐☆☆</small>
+                </div>
+              </div>
+            </div>
+          </div>
+    
+          <!-- عناصر التنقل (الأسهم) -->
+          <button class="carousel-control-prev" type="button" data-bs-target="#customerCarousel" data-bs-slide="prev">
+            <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+            <span class="visually-hidden">before</span>
+          </button>
+          <button class="carousel-control-next" type="button" data-bs-target="#customerCarousel" data-bs-slide="next">
+            <span class="carousel-control-next-icon" aria-hidden="true"></span>
+            <span class="visually-hidden">after</span>
+          </button>
+        </div>
+      </div>
+     <main class="contact-page">
+        <h1 class="text-primary">Contact Us</h1>
+        <form>
+            <label for="name">Name:</label>
+            <input type="text" id="name" placeholder="Enter your name">
+
+            <label for="email">Gmail:</label>
+            <input type="email" id="email" placeholder="Enter your email">
+
+            <label for="phone">Phone Number:</label>
+            <input type="tel" id="phone" placeholder="Enter your phone number">
+
+            <label for="message">Message:</label>
+            <textarea id="message" rows="4" placeholder="Enter your message"></textarea>
+
+            <button type="submit">Send</button>
+        </form>
+        <footer>
+            <div class="social-links">
+                <a href="#"><img src="facebook.png" alt="Facebook"></a>
+                <span class="social-name">face.bb12@outlook.com</span>
+            </div>
+            <div class="social-links">
+                <a href="#"><img src="instagram.png" alt="Instagram"></a>
+                <span class="social-name">rrt.thr88@outlook.com</span>
+            </div>
+            <div class="social-links" id="icon">
+                <a href="#"><img src="cc1.webp" alt="Instagram"></a>
+                <span class="social-name">11-33-55-7</span>
+            </div>
+        </footer>
+        <hr class="hr">
+    </main>
+
+    <!-- <script>
+        function changeLanguage(language) {
+            // حفظ اللغة في localStorage
+            localStorage.setItem('language', language);
+
+            // تغيير النصوص بناءً على اللغة المختارة
+            if (language === 'en') {
+                document.getElementById('text').innerHTML = "Hello, welcome to the site!";
+            } else if (language === 'ar') {
+                document.getElementById('text').innerHTML = "مرحباً، مرحباً بك في الموقع!";
+            }
+
+            // تغيير نص الزر في الـ dropdown
+            document.getElementById('languageDropdown').innerText = language === 'en' ? 'Language' : 'اللغة';
+        }
+
+        // عند تحميل الصفحة، استرجاع اللغة المخزنة في localStorage
+        window.onload = function() {
+            let savedLanguage = localStorage.getItem('language') || 'en';  // استرجاع اللغة المخزنة أو تعيين الإنجليزية كافتراضي
+            changeLanguage(savedLanguage);  // تطبيق اللغة المخزنة
+        }
+    </script> -->
+   
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"></script>
+    <script src="script.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.bundle.min.js"></script>
+</body>
+</html>
